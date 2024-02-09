@@ -9,7 +9,7 @@ This application provides a dashboard where you'll be able to:
 
 I avoided using any readymade solutions for the UI and general functionalities.
 
-All this information is stored in a global state and also saved on an API when any note is added, updated or deleted.
+All notes data (content, position, size and color) are stored in a global state and also saved on an API when any note is added, updated or deleted.
 
 There is a local API created using [json-server](https://www.npmjs.com/package/json-server) just to simulate a real life API, which basically would work the same way. All the data saved on this API are saved on a local file at `./db.json`
 
