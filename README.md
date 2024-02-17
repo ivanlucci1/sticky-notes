@@ -11,7 +11,7 @@ I avoided using any readymade solutions for the UI and general functionalities.
 
 All notes data (content, position, size and color) are stored in a global state and also saved on an API when any note is added, updated or deleted.
 
-There is a local API created using [json-server](https://www.npmjs.com/package/json-server) just to simulate a real life API, which basically would work the same way. All the data saved on this API are saved on a local file at `./db.json`
+There is a local API created using [json-server](https://www.npmjs.com/package/json-server) just to simulate a real life API, which basically would work the same way. All the data saved on this API are saved on a local file at `./db.json`.
 
 It's also possible to save the notes on the `localStorage` of the browser rather than on the API. The application uses the API as default, but it's ready to use `localStorage` as well and you would just need to update a few commented lines of code.
 
@@ -23,6 +23,7 @@ It's also possible to save the notes on the `localStorage` of the browser rather
 - Zustand - This library is used for state menagement and uses flux architecture, similar to Redux, but much more simple and lightweright.
 - Lucide React - Icons library
 - CSS modules and SCSS
+- Tests using [vitest](https://github.com/vitest-dev/vitest) - Uses Jest under the hood
 
 ## Build
 
@@ -32,14 +33,20 @@ Install all dependencies of the application:
 npm install
 ```
 
-Run the comment below to start the application:
+Run the command below to start the application:
 
 ```
 npm run dev
 ```
 
-Run the comment below to start the local API server:
+Run the command below to start the local API server:
 
 ```
 npm run server
+```
+
+Run the command below to execute the tests:
+
+```
+npm run test
 ```
