@@ -4,7 +4,6 @@ import { api } from "../lib/api";
 import { NoteData } from "../components/Note";
 
 interface NoteState {
-	activeNote: string | null;
 	notes: NoteData[];
 	draggingNoteId: string | false;
 
@@ -17,8 +16,6 @@ interface NoteState {
 }
 
 export const useStore = create<NoteState>((set) => ({
-	isAdding: false,
-	activeNote: null,
 	notes: [],
 	draggingNoteId: false,
 
@@ -44,7 +41,6 @@ export const useStore = create<NoteState>((set) => ({
 			};
 		});
 	},
-
 	updateNote: (noteId, noteData) => {
 		set((state) => {
 			const note = state.notes.find(note => note.id === noteId);
