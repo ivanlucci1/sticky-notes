@@ -1,4 +1,6 @@
-const colorPalette = [
+import { randomNumber } from './numbers';
+
+export const colorPalette = [
 	"#FDE68A",
 	"#D9F99D",
 	"#99F6E4",
@@ -12,7 +14,3 @@ const colorPalette = [
 export const getRandomColor = () => {
 	return colorPalette[randomNumber(0, colorPalette.length)];
 };
-
-function randomNumber(min: number, max: number) {
-	return Math.floor(Math.random() * (max - min) + min);
-}
