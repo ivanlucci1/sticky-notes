@@ -23,7 +23,7 @@ It's also possible to save the notes on the `localStorage` of the browser rather
 - Zustand - This library is used for state menagement and uses flux architecture, similar to Redux, but much more simple and lightweright.
 - Lucide React - Icons library
 - CSS modules and SCSS
-- Tests using [vitest](https://github.com/vitest-dev/vitest) - Uses Jest under the hood
+- Vitest - Testing framweork powered by Vite which uses Jest under the hood
 
 ## Build
 
